@@ -3,7 +3,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'photo-gallery',
+    modulePrefix: 'jane-doe-photography',
     environment,
     rootURL: '/',
     locationType: 'auto',

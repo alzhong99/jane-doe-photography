@@ -1,0 +1,21 @@
+<img src={{photo.src}} >
+<h3>{{photo.caption}}</h3>
+<p>Comments: {{photo.num_comments}}</p>
+{{#each comments as |comment|}}
+  <h4>{{comment.name}}</h4>
+  <p>{{comment.body}}</p>
+  <button onclick={{action "deleteComment" comment.id}}>Delete</button>
+{{else}}
+  <p>No Comments</p>
+{{/each}}
+<form onsubmit={{action "postComment"}}>
+  <h4>New Comment</h4>
+  <p>
+    Name:
+    {{input type=text value=name}}
+  </p>
+  {{textarea cols=30 rows=2 value=body}}
+  <button type=submit>Post</button>
+</form>
+
+{{yield}}

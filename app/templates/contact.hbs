@@ -1,0 +1,20 @@
+<h2>Contact</h2>
+
+<form onsubmit={{action "sendMsg"}}>
+  <p>
+    Name:
+    {{input type=text}}
+  </p>
+  <p>
+    Email:
+    {{input type=text}}
+  </p>
+  <p>Message:</p>
+  <p>
+    {{textarea cols=100 rows=10}}
+  </p>
+  <button type=submit>Send Message</button>
+
+</form>
+
+{{outlet}}
