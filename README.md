@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/alzhong99/jane-doe-photography.svg?branch=master)](https://travis-ci.org/alzhong99/jane-doe-photography)
+
 # jane-doe-photography
 
 This README outlines the details of collaborating on this Ember application.
