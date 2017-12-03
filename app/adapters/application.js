@@ -1,6 +1,7 @@
 import DS from 'ember-data';
+import config from 'jane-doe-photography/config/environment';
 
 export default DS.RESTAdapter.extend({
-  host: 'http://localhost:3000',
+  host: config.apiHost,
   namespace: 'api'
 });

@@ -1,12 +1,14 @@
 <img src={{photo.src}} >
-<h3>{{photo.caption}}</h3>
-<p>Comments: {{photo.num_comments}}</p>
+<h3 class='caption'>{{photo.caption}}</h3>
+<p class='num-comments'>Comments: {{photo.num_comments}}</p>
 {{#each comments as |comment|}}
-  <h4>{{comment.name}}</h4>
-  <p>{{comment.body}}</p>
-  <button onclick={{action "deleteComment" comment.id}}>Delete</button>
+  <div class='comment'>
+    <h4>{{comment.name}}</h4>
+    <p>{{comment.body}}</p>
+    <button onclick={{action "deleteComment" comment.id}}>Delete</button>
+  </div>
 {{else}}
-  <p>No Comments</p>
+  <p class='comment'>No Comments</p>
 {{/each}}
 <form onsubmit={{action "postComment"}}>
   <h4>New Comment</h4>

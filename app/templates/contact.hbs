@@ -3,18 +3,23 @@
 <form onsubmit={{action "sendMsg"}}>
   <p>
     Name:
-    {{input type=text}}
+    {{input id='nameInput' type=text}}
   </p>
   <p>
     Email:
-    {{input type=text}}
+    {{input id='emailInput' type=text}}
   </p>
   <p>Message:</p>
   <p>
-    {{textarea cols=100 rows=10}}
+    {{textarea id='messageInput' cols=100 rows=10}}
   </p>
   <button type=submit>Send Message</button>
-
 </form>
 
-{{outlet}}
+{{#if sentMessage}}
+  <div>
+    <h5>Message Sent!</h5>
+    <p id='contact-info'>From {{name}}, {{email}}:</p>
+    <p id='message'>{{message}}</p>
+  </div>
+{{/if}}

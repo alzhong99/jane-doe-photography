@@ -1,15 +1,15 @@
 <h1>{{#link-to "index"}}Jane Doe Photography{{/link-to}}</h1>
 
-<ul>
-  <li>
-    {{#link-to "gallery"}}Gallery{{/link-to}}
-  </li>
-  <li>
-    {{#link-to "about"}}About{{/link-to}}
-  </li>
-  <li>
-    {{#link-to "contact"}}Contact{{/link-to}}
-  </li>
+<ul id="nav-bar">
+  {{#link-to "gallery"}}
+    <li class="nav-button">Gallery</li>
+  {{/link-to}}
+  {{#link-to "about"}}
+    <li class="nav-button">About</li>
+  {{/link-to}}
+  {{#link-to "contact"}}
+    <li class="nav-button">Contact</li>
+  {{/link-to}}
 </ul>
 
 {{outlet}}

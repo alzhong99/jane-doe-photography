@@ -1,7 +1,9 @@
 <h2>Photo Gallery</h2>
 
 {{#each model as |photo|}}
-  {{gallery-photo photo=photo addComment=(action "addComment") removeComment=(action "removeComment") getComments=(action "getComments")}}
+  <div class="photo-post">
+    {{gallery-photo photo=photo addComment=(action "addComment") removeComment=(action "removeComment") getComments=(action "getComments")}}
+  </div>
 {{/each}}
 
 {{outlet}}

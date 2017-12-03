@@ -2,7 +2,7 @@ import { moduleForModel, test } from 'ember-qunit';
 
 moduleForModel('comment', 'Unit | Serializer | comment', {
   // Specify the other units that are required for this test.
-  needs: ['serializer:comment']
+  needs: ['serializer:comment', 'model:comment', 'model:photo']
 });
 
 // Replace this with your real tests.
