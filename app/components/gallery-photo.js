@@ -12,12 +12,12 @@ export default Ember.Component.extend({
         'body': this.get('body'),
         'photo': this.get('photo')
       };
-      this.get('addComment')(newComment, this.get('photo.id')).then(result => {
+      this.get('addComment')(newComment, this.get('photo.id')).then(() => {
         this.send('refreshComments');
       });
     },
     deleteComment(commentId) {
-      this.get('removeComment')(commentId, this.get('photo.id')).then(result => {
+      this.get('removeComment')(commentId, this.get('photo.id')).then(() => {
         this.send('refreshComments');
       });
     },
