@@ -34,7 +34,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'test') {
-    ENV.apiHost = 'http://localhost:3000';
+    ENV.apiHost = 'https://jane-doe-photo-api.herokuapp.com';
 
     // Testem prefers this...
     ENV.locationType = 'none';
