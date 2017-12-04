@@ -11,9 +11,9 @@ export default Ember.Controller.extend({
     sendMsg(e) {
       // Prevent automatic page refresh
       e.preventDefault();
-      this.set('nameInput', $('#nameInput').val());
-      this.set('emailInput', $('#emailInput').val());
-      this.set('messageInput', $('#messageInput').val());
+      this.set('nameInput', $('#name-input').val());
+      this.set('emailInput', $('#email-input').val());
+      this.set('messageInput', $('#message-input').val());
       // If inputs are blank, then toastr error notification
       if(this.get('nameInput') == ''
         || this.get('emailInput') == ''

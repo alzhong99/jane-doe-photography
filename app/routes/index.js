@@ -1,5 +1,5 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  title: "Jane Doe Photography - Home"
+  title: "Welcome to Jane Doe Photography"
 });

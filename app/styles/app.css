@@ -1,23 +1,93 @@
+/** {
+  border: 1px solid black;
+}*/
 body {
-  margin: 10px;
+  margin: 0;
+  background-color: #fff4d8;
+  background-image: url("https://lh3.googleusercontent.com/oDh-QdrsNTAqhobSFr3xDC-Bu-ktgoGDKxSBcgksiBzEakNM2YH8NlvWXhxTl1hxMbBJAheTczD7hnf1_QhN37vVJMSCqdSRNkI0zJ5bIHVHDAgMRYBX2HOP_pEEv9t_Q7zHq9M0fTrNWV94pHhiVMFLHRH0SMvuduZQC9r3qfQaomPzi3kWyQRtqye-TfLsO-yENxRhj7hIDalG_k8B3kQjowZyn729EwnVdLotnwozwn4kbE7xpzdRMVOvZ8oj3k_lVco4l8qwY_w_OdcYnqpzqPTB2eFey56Rbpx2TBmnR2EFfYeIthfMS3TkflYOtTP9OplkmTtNuo9VPTMIWaycGVvvJCHgJTrhdxvv-0gbKcWuZSamWWq3xBbKkrsvGgdmlqOWDU6LqXgGhgPH1I107ewuPqCvU3TP2P4vsvKoIvSyXkYJCtzmpUIPSNd4dQlVPkPHu_1tYE2tW43JUJ9FhFXuJV5iXjPjukWFOLUK9KLyof3kuLLcwCsueh37BpJmRlJ3ZEIzfKxZwmATyZUEdvt8-8Q_OODTpE2QXQeqTlIfcdA2M9SWGgbgN6TNm_UpOIHxgNKJXsFivGlDzABHKlYM-U1RpLjRVTYcVA=s486-no");
 }
 #nav-bar {
-  background-color: tan;
+  width: 100%;
   margin: 0;
+  padding: 0 30px 0 0;
+  background-color: white;
+  opacity: .9;
+  position: fixed;
+  top: 0;
 }
-.nav-button {
+#header-img {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  box-shadow: 0 10px 20px #a58861;
+}
+.nav-btn {
   display: inline-block;
-  width: 200px;
   padding: 15px;
   text-align: center;
-  color: white;
+  color: #7f602f;
 }
-.nav-button:hover {
-  background-color: brown;
+.nav-btn:hover {
+  color: #a58861;
+}
+.heading {
+  color: white;
+  position: relative;
+  top: -100px;
+  text-align: center;
+  letter-spacing: .2em;
+  font-weight: 300;
+  font-size: 48px;
+}
+.content {
+  background-color: #fff4d8;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2%;
+}
+.section {
+  margin: 5% 10%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px #a58861;
+}
+.content-img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+.caption {
+  display: inline-block;
+  margin: 10px
+}
+.num-comments {
+  display: inline-block;
+  font-style: italic;
+  margin: 10px;
+}
+.comment {
+  background-color: ivory;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px 0;
+}
+button {
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.comment-body {
+  width: 80%;
+  display: inline-block;
+}
+#message-input {
+  width: 100%;
+}
+.first {
+  margin-top: -50px;
 }
 
 .loader {
-  color: PowderBlue;
+  color: #a58861;
   font-size: 20px;
   margin: 100px auto;
   width: 1em;

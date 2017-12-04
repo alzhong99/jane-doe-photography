@@ -1,15 +1,17 @@
-<h1>{{#link-to "index"}}Jane Doe Photography{{/link-to}}</h1>
-
 <ul id="nav-bar">
-  {{#link-to "gallery"}}
-    <li class="nav-button">Gallery</li>
+  {{#link-to "index"}}
+    <li class="nav-btn"><h1>Jane Doe Photography</h1></li>
   {{/link-to}}
   {{#link-to "about"}}
-    <li class="nav-button">About</li>
+    <li class="nav-btn float-right"><h4>About</h4></li>
   {{/link-to}}
   {{#link-to "contact"}}
-    <li class="nav-button">Contact</li>
+    <li class="nav-btn float-right"><h4>Contact</h4></li>
+  {{/link-to}}
+  {{#link-to "gallery"}}
+    <li class="nav-btn float-right"><h4>Gallery</h4></li>
   {{/link-to}}
 </ul>
+<img id="header-img" src="https://lh3.googleusercontent.com/-oKotBOsPYH_wi7A8lcQqxaPYzUJmX6yoKMEJZCW4AkkODA5iMBEbfgzw6xISd01O6_QV3nZx7KWViJ_CDwz0KowJxFQcR_Kp6SA94C7WGtBJC6S8FEOkFRp7S6wUnqxSDlO39h3IdDPks6wBXUxfEJ6Ton8yXtgiIGFv_epqA2wNz6YGDAuc46JG2WC4F6sKfc2GiJmjUmE-HYmweRG3hDGmA5UZJniV2Y0ZvBPwdjJMrj0hSfDxeNmGH3yE1FQnsp-IeeN7lP4icSfO1POtM4zDQJzaMAtbgzVFd-qH9_jJEUQ4o7lLBhYmHHwGTLBzBgZLRBhzl2FtMqw3slSl4FsxvE4aMAAw5dyvjhzVt8fNMpMJe5OHDySS_0hJO4fzrnBfqG-66aKAkoN0rs3cuB2CL4D2E74I1yeVaaakiECzs5nVjMbUJczV9CdlvLUGz7Hh4BSJOxfePklVZlPgVt11xVrlaU0UDOcrOzJ3plXqxbnPIxf_qQZTGxMjZWbZJTWLxELmC3lm2hVSAor-GtTTswJC0Fn6jt9lIQNYE2i8mGZ7UUxweT9Q-x0RAnF0v3FqmuyTzjRnARUoflhTeh8dBTlM3p-Ue_dqEZYqYSgN4w7bji4qm4cpkuzX9BzMoC2ExGO0TT9nu4W4xaW4SVkFZbb5hXAjyM=w1080-h291-no"/>
 
 {{outlet}}
