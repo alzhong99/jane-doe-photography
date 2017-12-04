@@ -1,6 +1,3 @@
-/** {
-  border: 1px solid black;
-}*/
 body {
   margin: 0;
   background-color: #fff4d8;
@@ -65,7 +62,7 @@ body {
   font-style: italic;
   margin: 10px;
 }
-.comment {
+.comment-section {
   background-color: ivory;
   padding: 10px;
   margin: 5px;

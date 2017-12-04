@@ -8,6 +8,6 @@ test('viewing photos', function(assert) {
   visit('/gallery');
   // Should render 5 photos
   andThen(function() {
-    assert.equal(find('.photo-post').length, 5, 'photos rendered in gallery');
+    assert.equal(find('.content-img').length, 5, 'photos rendered in gallery');
   });
 });

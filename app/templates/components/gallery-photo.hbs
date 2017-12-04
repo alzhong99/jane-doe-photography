@@ -3,15 +3,15 @@
   <h3 class='caption'>{{photo.caption}}</h3>
   <p class='num-comments'>Comments: {{photo.num_comments}}</p>
   {{#each comments as |comment|}}
-    <div class='comment'>
+    <div class='comment-section comment'>
       <h6>{{comment.name}}</h6>
       <p class='comment-body'>{{comment.body}}</p>
       <button class='float-right' onclick={{action "deleteComment" comment.id}}>Delete</button>
     </div>
   {{else}}
-    <div class='comment'>No Comments</div>
+    <div class='comment-section comment'>No Comments</div>
   {{/each}}
-  <form class='comment' onsubmit={{action "postComment"}}>
+  <form class='comment-section' onsubmit={{action "postComment"}}>
     <h6>New Comment</h6>
     <p>
       Name:

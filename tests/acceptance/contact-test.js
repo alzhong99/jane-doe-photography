@@ -6,9 +6,9 @@ moduleForAcceptance('Acceptance | contact');
 test('sending a message', function(assert) {
   // Visit contact route, fill in inputs, and click submit button
   visit('/contact');
-  fillIn('#nameInput', 'Bob');
-  fillIn('#emailInput', 'bob@gmail.com');
-  fillIn('#messageInput', 'Hello');
+  fillIn('#name-input', 'Bob');
+  fillIn('#email-input', 'bob@gmail.com');
+  fillIn('#message-input', 'Hello');
   click('button');
   // Should render "Message Sent!", sender contact info, and message
   andThen(function() {
